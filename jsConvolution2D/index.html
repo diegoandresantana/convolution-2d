@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Convolution Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar - Controls -->
+        <div class="sidebar">
+            <div class="control-panel">
+                <h2>Controls</h2>
+                
+                <button id="selectImageBtn" class="btn-primary">Select Image</button>
+                
+                <div class="matrix-section">
+                    <h3>Convolution Matrix (3x3)</h3>
+                    <div class="matrix-grid">
+                        <div class="matrix-cell">
+                            <label>v1</label>
+                            <input type="number" id="v1" step="0.01" value="0.0625">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v2</label>
+                            <input type="number" id="v2" step="0.01" value="0.125">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v3</label>
+                            <input type="number" id="v3" step="0.01" value="0.0625">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v4</label>
+                            <input type="number" id="v4" step="0.01" value="0.125">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v5</label>
+                            <input type="number" id="v5" step="0.01" value="0.25">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v6</label>
+                            <input type="number" id="v6" step="0.01" value="0.125">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v7</label>
+                            <input type="number" id="v7" step="0.01" value="0.0625">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v8</label>
+                            <input type="number" id="v8" step="0.01" value="0.125">
+                        </div>
+                        <div class="matrix-cell">
+                            <label>v9</label>
+                            <input type="number" id="v9" step="0.01" value="0.0625">
+                        </div>
+                    </div>
+                    
+                    <h4>Preset Kernels</h4>
+                    <div class="preset-kernels">
+                        <button class="preset-btn" data-kernel="blur">Blur</button>
+                        <button class="preset-btn" data-kernel="sobel-bottom">Bottom Sobel</button>
+                        <button class="preset-btn" data-kernel="emboss">Emboss</button>
+                        <button class="preset-btn" data-kernel="identity">Identity</button>
+                        <button class="preset-btn" data-kernel="sobel-left">Left Sobel</button>
+                        <button class="preset-btn" data-kernel="outline">Outline</button>
+                        <button class="preset-btn" data-kernel="sobel-right">Right Sobel</button>
+                        <button class="preset-btn" data-kernel="sharpen">Sharpen</button>
+                        <button class="preset-btn" data-kernel="sobel-top">Top Sobel</button>
+                    </div>
+                </div>
+                
+                <button id="runProcessBtn" class="btn-success">Run Process</button>
+                <button id="runSlowBtn" class="btn-warning">Run Process Slowly</button>
+                
+                <div class="calc-display">
+                    <h3>Pixel Calculation</h3>
+                    <div id="calcText">Select an image and run convolution to see calculations</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Side - Images -->
+        <div class="main-content">
+            <div class="images-container">
+                <div class="image-panel">
+                    <h3>Original (Grayscale)</h3>
+                    <canvas id="originalCanvas"></canvas>
+                </div>
+                <div class="image-panel">
+                    <h3>Convolution 2D Result</h3>
+                    <canvas id="resultCanvas"></canvas>
+                </div>
+                <div class="image-panel">
+                    <h3>Step-by-Step Processing</h3>
+                    <canvas id="stepCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>
