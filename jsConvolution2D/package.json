@@ -1,0 +1,21 @@
+{
+  "name": "js-convolution-2d",
+  "version": "1.0.0",
+  "description": "Interactive 2D convolution visualizer built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "convolution",
+    "image-processing",
+    "computer-vision",
+    "electron"
+  ],
+  "author": "Diego André Sant'Ana (diego.santana@ifms.edu.br)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}
