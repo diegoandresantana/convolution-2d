@@ -107,7 +107,7 @@ convolution-2d/
 │   ├── index.html          # UI interface
 │   ├── styles.css          # Styling
 │   └── package.json        # Node.js dependencies
-├── webConvolution2D/        # JavaScript Web version (GitHub Pages compatible)
+├── docs/                    # JavaScript Web version (GitHub Pages compatible)
 │   ├── index.html          # UI interface
 │   ├── renderer.js         # Browser-side logic
 │   └── styles.css          # Styling
@@ -139,13 +139,15 @@ npm start
 ### 3. JavaScript Web Version (Browser/GitHub Pages) ⭐ NEW
 Pure JavaScript version that runs directly in the browser - **perfect for GitHub Pages!**
 
-**Access:** Simply open `webConvolution2D/index.html` in your browser, or deploy to GitHub Pages.
+**Access:** Simply open `docs/index.html` in your browser, or deploy to GitHub Pages.
 
 **Deploy to GitHub Pages:**
 1. Go to your repository Settings > Pages
-2. Select the branch you want to publish from
-3. Choose `/webConvolution2D` as the source folder
+2. Select the branch you want to publish from (usually `main` or `master`)
+3. Choose `/docs` as the source folder
 4. Your app will be available at `https://your-username.github.io/your-repo/`
+
+**Note**: The web version is located in the `/docs` folder to be compatible with GitHub Pages default configuration.
 
 ## 📝 Notes
 
