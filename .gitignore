@@ -1,6 +1,4 @@
 ```
-# Build artifacts
-docs/*.html
-docs/*.js
-docs/*.css
+# Jekyll
+.nojekyll
 ```
