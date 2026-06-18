@@ -101,28 +101,51 @@ python pyConvolution2D.py
 ```
 convolution-2d/
 ├── pyConvolution2D.py      # Main Python application
-├── jsConvolution2D/         # JavaScript/Electron version
+├── jsConvolution2D/         # JavaScript/Electron version (Desktop)
 │   ├── main.js             # Electron main process
 │   ├── renderer.js         # Browser-side logic
 │   ├── index.html          # UI interface
 │   ├── styles.css          # Styling
 │   └── package.json        # Node.js dependencies
+├── webConvolution2D/        # JavaScript Web version (GitHub Pages compatible)
+│   ├── index.html          # UI interface
+│   ├── renderer.js         # Browser-side logic
+│   └── styles.css          # Styling
 ├── requirements.txt         # Python dependencies
 ├── README.md               # This file
 └── .gitignore              # Git ignore rules
 ```
 
-## 🌐 JavaScript Version
+## 🌐 Versions Available
 
-A JavaScript version built with Electron is also available! See the `jsConvolution2D/` directory for details.
+### 1. Python Version (Desktop)
+Original implementation using OpenCV and Tkinter.
 
-### Running the JavaScript Version
+**Run:**
+```bash
+python pyConvolution2D.py
+```
 
+### 2. JavaScript Electron Version (Desktop)
+Desktop application built with Electron.
+
+**Run:**
 ```bash
 cd jsConvolution2D
 npm install
 npm start
 ```
+
+### 3. JavaScript Web Version (Browser/GitHub Pages) ⭐ NEW
+Pure JavaScript version that runs directly in the browser - **perfect for GitHub Pages!**
+
+**Access:** Simply open `webConvolution2D/index.html` in your browser, or deploy to GitHub Pages.
+
+**Deploy to GitHub Pages:**
+1. Go to your repository Settings > Pages
+2. Select the branch you want to publish from
+3. Choose `/webConvolution2D` as the source folder
+4. Your app will be available at `https://your-username.github.io/your-repo/`
 
 ## 📝 Notes
 
